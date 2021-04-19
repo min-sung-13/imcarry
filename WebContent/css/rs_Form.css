@@ -1,0 +1,266 @@
+@import url(./common.css);
+
+/* 보관서비스 */
+.reservation {
+	background: url(../images/img/sub02_visual_img.jpg) no-repeat 9% 0;
+}
+
+.sub_content_wrap {
+	width: 100%;
+	height: fit-content;
+	background-attachment: fixed;
+	letter-spacing: -2px;
+	position: relative;
+}
+.sub_content_wrap .sub_content .sub_navi ul li {
+	width: 50%;
+}
+.sub_content .sub_navi ul li:first-child a {
+	font-weight: bold;
+	background: #ffda00;
+}
+
+
+/*공통 */
+select {
+	padding: 0 2%;
+	border: 1px solid #ddd;
+}
+select:focus { outline: none; }
+input {
+	box-sizing: border-box;
+	display: flex;
+	width: 85%;
+	margin: 0.8rem auto;
+	padding: 22px 13px;
+	min-height: 2rem;
+	font-size: 0.9rem;
+	border: 1px solid #ddd;
+}
+input:focus { outline: none; }
+
+/* 예약 폼 intro */
+#re_info {
+	margin-top: 70px;
+	background: #F7F7F7;
+}
+#re_info #reInfo_img {
+	margin: 0 auto 40px;
+	padding-top: 115px;
+	width: 150px;
+}
+#re_info h3 {
+	font-size: 23px; font-weight: normal;
+	line-height: 36px;
+	text-align: center;
+}
+
+/* 예약 폼 */
+#re_info form {
+	margin: 10px auto;
+	max-width: 50%;
+	padding-top: 20px;
+	padding-bottom: 100px;
+}
+#re_info form #name2 {
+	background: #fff;
+	border: 1px solid #ddd;
+}
+#re_info form #phone2 {
+	background: #fff;
+	border: 1px solid #ddd;
+}
+#re_info form .h1 {
+	box-sizing: border-box;
+	position: relative;
+	width: 85%; height: 24px;
+	padding: 1.5% 13px 0 15px;
+	margin: 5% auto 2%;
+	font-weight: bold;
+	font-size: 1.0rem;
+}
+#re_info form .h1:before {
+	position: absolute;
+	top: 51%; left: 0;
+	content: "";
+	width: 10px; height: 10px;
+	background-color: #ffda00;
+}
+#re_info form .box_select {
+	display: flex;
+	box-sizing: border-box;
+	width: 85%;
+	height: 120px;
+	margin: 0 auto;
+	padding: 0 13px 0;
+	background: #fff;
+	border: 1.5px solid #ddd;
+	align-items: center;
+}
+
+/* 구간 선택 */
+#re_info form #select_place {
+	justify-content: space-between;
+	height: 110px;
+	padding: 0 10% 0;
+}
+#re_info form #select_place .select_option {
+	width: 47%;
+	height: 48px;
+}
+
+/* 시간 선택 */
+#re_info form #select_time {
+	justify-content: center;
+}
+#re_info form #select_time #datepicker_start {
+	width: 41%; height: 48px;
+	padding: 0 2%;
+	margin: 0 0 0 0;
+	margin-right: 22px;
+}
+#re_info form #select_time .select_option {
+	width: 23%;
+	height: 48px;	
+}
+#re_info form #select_time #select_hour {
+	margin-right: 0.4rem;
+}
+
+/* 수하물 갯수 & 금액 */
+#re_info form .box_select .count_n_price {
+	width: 20%;
+	margin: 0 1% 0 34%;
+	text-align: right;
+	font-size: 1.25rem;
+	font-weight: bold;
+	border: none;
+	border-bottom: 1px solid #ddd;
+	padding: 5px 8px;
+	color: #444;
+	
+}
+#re_info form .box_select .count {
+	font-size: 1.0rem;
+	font-weight: bold;
+	color: #444;
+}
+/* 금액  */
+#re_info form .box_select #bPrice {
+	width: 23%;
+	margin: 0 0 0 31%;
+	border: none;
+	padding: 5px 5px;
+	font-size: 1.3rem;
+}
+
+/* 예약하기 버튼 */
+#re_info form #btninput {
+	width: 84%;
+	height: 63px;
+	margin-top: 30px;
+	font-size: 1.2em;
+	color: #fff;
+	background: #ffda00;
+	border: none;
+	justify-content: center;
+	padding: 0;
+}
+#re_info form #btninput:hover {
+	font-weight: bold;
+	background: #ffda00;
+	color: #444;
+}
+
+
+
+
+
+/************************************/
+
+/* 모바일 화면 */
+
+
+@media screen and (max-width: 800px) {
+/* 메뉴 */
+.sub_content_wrap .sub_title {
+	height: 70px;
+	margin: 0;
+	padding: 150px 0 50px 4%;
+	font-size: 26px;
+}
+.white {
+	width: 100%;
+}
+.white .sub_content {
+	width: 100%;
+}
+.white .sub_content .sub_navi {
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+.white .sub_content .sub_navi ul {
+	width: 100%;
+	height: 100%;
+}
+.white .sub_content .sub_navi ul li {
+	width: 50%;
+}
+.white .sub_content .sub_navi ul li a {
+	height: 100%;
+}
+.white .sub_content .sub_navi ul li:first-child a {
+	border-radius: 0;
+}
+.white .sub_content .sub_navi ul li:last-child a {
+	border-radius: 0;
+}
+.white .sub_content .sub_indicator {
+	width: 90%;
+	padding-bottom: 1.5%;
+	padding-top: 130px;
+	margin: 0 auto;
+}
+.white .sub_content .sub_indicator>ul {
+	display: none;
+}
+.white .sub_content .sub_indicator>h2 {
+	font-size: 30px;
+	color: black;
+	font-weight: 600;
+}
+
+/* 공통 */
+
+
+
+/* 예약 폼 intro */
+#re_info h3 {
+	font-size: 19px;
+}
+
+/* 예약 폼 */
+#re_info form {
+	max-width: 100%;
+}
+#re_info form .h1 {
+	padding: 2.5% 13px 0 15px;
+}
+
+/* 시간 선택 */
+#re_info form #select_time #datepicker_start {
+	text-align: center;
+	margin-right: 0.4rem;
+}
+#re_info form #select_time .select_option {
+	width: 32%;
+}
+
+/* 총 금액 */
+#re_info form .box_select #bPrice {
+	width: 35%;
+	margin: 0 0 0 22.5%;
+}
+
+}

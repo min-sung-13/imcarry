@@ -1,0 +1,795 @@
+@charset "utf-8";
+@import url("common.css");
+
+/* customer */
+    /* common */
+    	.hidden {
+    		display: none;
+    	}
+    	.show {
+    		display: block;
+    	}
+        .page_wrap {
+            width: 100%;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .page_wrap .page_list {
+            display: inline-block;
+        }
+        .page_wrap .page_list a.on {
+        	background-color: #fff;
+        }
+        .page_wrap .page_list li { 
+            float: left;
+            width: 30px;
+            height: 30px;
+            margin: 0 10px;
+        }
+        .page_wrap .page_list li a {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            color: #555;
+            line-height: 30px;
+            text-align: center;
+        }
+        .page_wrap .page_list li a.on {
+            color: #f7b618;
+            font-weight: bold;
+        }
+        .page_wrap .page_list li a:hover {
+            background-color: #efefef;
+            color: #f7b618;
+            font-weight: bold;
+        }
+
+    /* common end */
+
+    /* notice */
+        .sub_content .notice_area { 
+            box-sizing: border-box; 
+            height: 100%; 
+            padding-top: 60px; 
+        }
+        .sub_content .notice_area .minisrch_form { 
+            display: flex; 
+            float: right; 
+            margin-bottom: 40px; 
+        }
+        .sub_content .notice_area .minisrch_form select { 
+            box-sizing: border-box; 
+            width: 80px; height: 40px; 
+            padding-left: 10px; 
+            border: 1px solid #bbb; 
+            font-weight: bold; 
+            cursor: pointer; 
+        }
+        .sub_content .notice_area .minisrch_form input[type="text"] { 
+            box-sizing: border-box; 
+            width: 250px; height: 40px; 
+            padding-left: 20px; 
+            border: 1px solid #bbb; 
+        }
+        .sub_content .notice_area .minisrch_form input[type="button"] {
+            box-sizing: border-box; 
+            width: 100px; height: 40px; 
+            border: none; 
+            background-color: #ffd204; 
+            font-weight: bold; 
+        }
+        .sub_content .notice_area .minisrch_form input[type="button"]:hover {
+            background-color: #f7b618; 
+            cursor: pointer; 
+        }
+        .sub_content .notice_area .notice_list { 
+            width: 100%; 
+            padding-top: 40px; 
+        }
+        .sub_content .notice_area .notice_list tr th { 
+            box-sizing: border-box; 
+            height: 60px; 
+            border-top: 2px solid #333; 
+            background-color: #f8f8f8; 
+            font-size: 17px; 
+            font-weight: 400;
+        }
+        .sub_content .notice_area .notice_list tr td { 
+            box-sizing: border-box; 
+            height: 60px; 
+            border-bottom: 1px solid #ddd; 
+            text-align: center; 
+        }
+        .sub_content .notice_area .notice_list tr td:nth-child(2) { 
+            text-align: left; 
+            padding-left: 20px; 
+        }
+        .sub_content .notice_area .notice_list tr td:nth-child(4), .sub_content .notice_area .notice_list tr td:last-child { 
+            letter-spacing: 0px; 
+        }
+        .sub_content .notice_area .notice_list tr td a { 
+            color: #444; 
+        }
+    /* notice end */
+
+    /* notice_in */
+        .sub_content .notice_area .title_table { height: 130px; }
+        .sub_content .notice_area .title_table tr th { 
+            height: 35px; 
+            font-size: 16px; 
+            font-weight: bold; 
+        }
+        .sub_content .notice_area .title_table tr td { 
+            border-top: 1px solid #ddd; 
+        }
+        .sub_content .notice_area .title_table tr td:first-child { 
+            text-align: center; 
+        }
+        .sub_content .notice_area .title_table tr td:nth-child(2) { 
+            padding: 0; 
+            text-align: center; 
+        }
+        .sub_content .notice_area .notice_content { 
+            height: 100%; 
+            padding: 20px; 
+            border-bottom: 1px solid #ddd; 
+        }
+        .sub_content .notice_area .notice_content p { 
+            padding: 5px 0; 
+            letter-spacing: -1px; 
+        }
+        .sub_content .notice_area .notice_content div { 
+            text-align: center; 
+        }
+        .sub_content .notice_area .notice_content img { 
+            margin: 10px auto; 
+        }
+        .sub_content .notice_area .notice_content figure {
+        	width: 100%;
+        }
+        .sub_content .notice_area .notice_content figure img {
+        	max-width: 100% !important;
+        }
+    /* notice_in end */
+
+    /* FAQ */
+        .faq_on {
+            color: #f7b62e;
+        }
+        .faq_on::after {
+            float: right;
+		    font-size: 50px !important;
+		    color: #f7b62e !important;
+		    content: "-" !important;
+		    line-height: 20px;
+        }
+        .sub_content .faq_area { 
+            height: 100%;
+        }
+        .sub_content .faq_area .faq_list {
+            width: 100%;
+            margin-top: 70px;
+            border-top: 2px solid #333;
+        }
+        .sub_content .faq_area .faq_list dt {
+            padding: 35px 40px;
+            border-bottom: 1px solid #ddd;
+            cursor: pointer;
+        }
+        .sub_content .faq_area .faq_list dt p {
+            font-size: 18px;
+        }
+        .sub_content .faq_area .faq_list dt .q_box {
+        	display: inline-block;
+        	vertical-align: middle;
+        }
+        .sub_content .faq_area .faq_list dt .q_box p {
+        	margin-bottom: 5px;
+        }
+        .sub_content .faq_area .faq_list dt .big.q {
+        	display: inline;
+        	margin-right: 20px;
+            font-size: 26px;
+            font-weight: bold;
+            color: #f7b62e;
+            vertical-align: middle;
+        }
+        .sub_content .faq_area .faq_list dt::after {
+            float: right;
+            font-size: 30px;
+            font-weight: bold;
+            color: #555;
+            content: "+";
+            line-height: 20px;
+        }
+        .sub_content .faq_area .faq_list dd {
+            padding: 40px;
+            border-bottom: 1px solid #ddd;
+            background-color: #F8F9FB;
+            vertical-align: text-top;
+        }
+        .sub_content .faq_area .faq_list dd .big {
+            box-sizing: border-box;
+            display: inline;
+            margin-right: 20px;
+            font-size: 26px;
+            font-weight: bold; 
+            vertical-align: top;
+        }
+        .sub_content .faq_area .faq_list dd .a_box {
+            box-sizing: border-box;
+            display: inline-block;
+            width: 96%;
+        }
+        .sub_content .faq_area .faq_list dd .a_box p {
+            color: #555;
+            font-size: 16px;
+            letter-spacing: -1px;
+            line-height: 24px;
+        }
+    /* FAQ end */
+
+    /* review */
+        .review_area .btn_wrap {
+            margin-top: 40px;
+            text-align: right;
+        }
+        .review_area .review_list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .review_area .review_list .review_content {
+            position: relative;
+            width: 550px;
+            height: 350px;
+            margin: 40px 0;
+            border: 2px solid #ddd;
+            border-radius: 20px 0 20px 0;
+            box-shadow: 2px 5px 10px #ddd;
+            color: #555;
+        }
+        .review_area .review_list .review_content .name {
+            position: absolute;
+            top: 25px;
+            left: 20px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .review_area .review_list .review_content .name::before {
+            content: '작성자 :';
+            margin-right: 8px;
+            font-size: 14px;
+            color: #999;
+        }
+        .review_area .review_list .review_content .root {
+            position: absolute;
+            top: 25px;
+            left: 180px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .review_area .review_list .review_content .root::before {
+            content: '구간 :';
+            margin-right: 8px;
+            font-size: 14px;
+            color: #999;
+        }
+        .review_area .review_list .review_content .use_date {
+            position: absolute;
+            top: 25px;
+            right: 30px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .review_area .review_list .review_content .use_date::before {
+            content: '이용 날짜 :';
+            margin-right: 8px;
+            font-size: 14px;
+            color: #999;
+        }
+        .review_area .review_list .review_content .star {
+            position: absolute;
+            top: 65px;
+            left: 16px;
+            width: 200px;
+            height: 40px;
+            background: url(../images/ico/star.png) repeat-x;
+            background-size: 40px;
+            text-indent: -9999px;
+        }
+        .review_area .review_list .review_content .star.half { width: 20px; }
+        .review_area .review_list .review_content .star.one { width: 40px; }
+        .review_area .review_list .review_content .star.one_half { width: 60px; }
+        .review_area .review_list .review_content .star.two { width: 80px; }
+        .review_area .review_list .review_content .star.two_half { width: 100px; }
+        .review_area .review_list .review_content .star.three { width: 120px; }
+        .review_area .review_list .review_content .star.three_half { width: 140px; }
+        .review_area .review_list .review_content .star.four { width: 160px; }
+        .review_area .review_list .review_content .star.four_half { width: 180px; }
+        .review_area .review_list .review_content .star.five { width: 200px; }
+        .review_area .review_list .review_content .title {
+            position: absolute;
+            top: 130px;
+            left: 20px;
+            width: 355px;
+            height: 21px;
+            font-size: 20px;
+            font-weight: bold;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        .review_area .review_list .review_content .write_date {
+            position: absolute;
+            top: 130px;
+            right: 30px;
+            color: #999;
+            vertical-align: top;
+        }
+        .review_area .review_list .review_content .write_date::before {
+            content: '작성일 : ';
+            margin-right: 8px;
+            vertical-align: top;
+        }
+        .review_area .review_list .review_content .contents {
+            position: absolute;
+            top: 180px;
+            left: 20px;
+            width: 510px;
+            height: 140px;
+            overflow: auto;
+            line-height: 20px;
+            letter-spacing: -1px;
+        }
+        .review_area .review_list .review_content .contents a {
+        	color: #555;
+        }
+        .review_area .review_list .review_content .contents a:hover {
+        	color: #FF6F61;
+        }
+    /* review end */
+
+    /* review_write */
+        .ck-editor__editable_inline {
+            min-height: 500px;
+        }
+        .review_area .write_wrap h3 {
+            margin-top: 100px;
+        }
+        .review_area .write_wrap form {
+            position: relative;
+            width: 100%;
+        }
+        .review_area .write_wrap .input_area {
+        	text-align: center;
+        }
+        .review_area .write_wrap .star_list {
+            display: inline-block;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+        .review_area .write_wrap .star_list li {
+            float: left;
+            box-sizing: border-box;
+            width: fit-content;
+            height: 40px;
+            text-indent: -9999px;
+        }
+        .review_area .write_wrap .star_list li:nth-child(even) {
+            margin-right: 20px;
+        }
+        .review_area .write_wrap .star_list a {
+            display: block;
+            width: 20px;
+            height: 40px;
+        }
+        .review_area .write_wrap .star_list li:nth-child(even) a { /* 짝수 */
+            width: 20px;
+            background: url(../images/ico/gray_star.png) right no-repeat;
+            background-size: 40px;
+        }
+        .review_area .write_wrap .star_list li:nth-child(even) a.on, .review_area .write_wrap .star_list li:nth-child(even) a.click {
+            width: 20px;
+            background: url(../images/ico/star.png) right no-repeat;
+            background-size: 40px;
+            background-color: transparent !important;
+        }
+        .review_area .write_wrap .star_list li:nth-child(odd) a {
+            background: url(../images/ico/gray_star.png) left no-repeat;
+            background-size: 40px;
+        }
+        .review_area .write_wrap .star_list li:nth-child(odd) a.on, .review_area .write_wrap .star_list li:nth-child(odd) a.click {
+            background: url(../images/ico/star.png) left no-repeat;
+            background-size: 40px;
+            background-color: transparent !important;
+        }
+        .review_area .write_wrap p.mid_text {
+            display: inline-block;
+            position: relative;
+            bottom: 43px;
+            margin-right: 30px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #555;
+        }
+        .review_area .write_wrap #reTitle {
+            box-sizing: border-box;
+            display: block;
+            width: 610px;
+            height: 50px;
+            padding: 10px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            border: 1px solid #999;
+            font-size: 16px;
+        }
+        #book_check_area {
+        	width: 100%;
+        	height: 100%;
+        	margin-top: 100px;
+        	text-align: center;
+        }
+        #book_check_area p {
+        	position: static;
+        	display: block;
+        	margin: 0 auto;
+        }
+        #book_check_area p.text {
+        	margin-top: 30px;
+        	font-size: 23px;
+        }
+        #book_check_area input[type="text"] {
+        	box-sizing: border-box;
+        	display: block;
+        	width: 370px;
+        	height: 60px;
+        	margin: 0 auto;
+        	margin-top: 30px;
+        	padding: 10px;
+            border: 1px solid #999;
+            font-size: 16px;
+        }
+        #book_check_area #book_check_btn {
+			box-sizing: border-box;
+			width: 370px;
+			height: 60px;
+		    margin-top: 30px;
+			margin-bottom: 50px;
+			border: 1px solid #ccc;
+			border-radius: 15px 0 15px 0;
+			background-color: #ffda00;
+			font-weight: bold;
+			cursor: pointer;
+        }
+        #book_check_area #book_check_btn:hover {
+        	background-color: #ffe866;
+        }
+        
+        .check_result {
+        	width: 670px;
+        	margin: 20px auto;
+        	padding-top: 30px;
+        	border-top: 2px solid #dfdfdf;
+        	border-bottom: 2px solid #dfdfdf;
+        	text-align: center;
+        }
+        .no_msg, .result_msg {
+        	margin-bottom: 40px;
+        	text-align: center;
+        	color: #666;
+        }
+        .no_msg > span {
+        	color: #eac700;
+        	font-weight: bold;
+        }
+        .check_result table {
+        	width: 100%;
+        	color: #666;
+        	margin-bottom: 30px;
+        }
+        .check_result table th {
+        	padding-bottom: 25px;
+        	font-size: 18px;
+        }
+        .check_result table input {
+        	box-sizing: border-box;
+        	width: 100px;
+        	height: 40px;
+        	border: 1px solid #ccc;
+			border-radius: 15px 0 15px 0;
+			background-color: #ffda00;
+			font-weight: bold;
+			cursor: pointer;
+        }
+        .check_result table input:hover {
+        	background-color: #ffe866;
+        }
+        .accent {
+        	font-size: 18px;
+        	font-weight: bold;
+        	color: #ecb802;
+        }
+    /* review_write end */
+/* customer end */
+
+/* media query */
+@media screen and (min-width: 801px) and (max-width: 1199px) {
+  
+  
+}
+
+@media screen and (max-width: 800px) {
+	
+	/* sub_page_common */
+	.sub_content_wrap { 
+		padding-bottom: 0; 
+		margin-bottom: 30px; 
+	}
+	.sub_content_wrap .sub_title { 
+		width: fit-content; 
+		height: 70px; 
+		margin: 0; 
+		padding: 150px 0 50px 4%; 
+		font-size: 26px 
+	}
+	.sub_content_wrap .sub_content .sub_navi { 
+		position: static; 
+		width: 100%; 
+		left: 0; 
+		text-align: center; 
+	}
+	.sub_content_wrap .sub_content .sub_navi ul li { 
+		width: 34%; 
+	}
+	.sub_content_wrap .sub_content .sub_navi ul li a { 
+		height: 75px; 
+		border: none; 
+		border-radius: 0px; 
+		border-top: 1px solid #ddd; 
+		border-bottom: 1px solid #ddd; 
+	}
+	.sub_content_wrap .sub_content .sub_navi ul li:first-child a { 
+		border-radius: 0px; 
+	}
+	.sub_content_wrap .sub_content .sub_navi ul li:nth-child(2) a { 
+		border-right: 1px solid #ddd; border-left: 1px solid #ddd; 
+	}
+	.sub_content_wrap .sub_content .sub_navi ul li:last-child a { 
+		border-radius: 0px; 
+	}
+	.sub_content_wrap .sub_content .sub_indicator { 
+		height: 60px; 
+		padding-top: 50px;
+		border-bottom: 1px solid #ddd; 
+	}
+	.sub_content_wrap .sub_content .sub_indicator ul {
+		display: none;
+	}
+	.sub_content_wrap .sub_content .sub_indicator h2 { 
+		float: left; 
+		padding-left: 4%; 
+		font-size: 34px; 
+	}
+	.sub_content_wrap .sub_content .button_wrap { 
+		margin: 40px 0; 
+		text-align: right;
+	}
+	/* sub_page_common end */
+    
+    .page_wrap {
+        margin-top: 20px;
+    }
+
+    .sub_content .notice_area {
+        width: 90vw;
+    }
+    .sub_content .notice_area .minisrch_form {
+        width: 100%;
+        justify-content: center;
+    }
+    .sub_content .notice_area .minisrch_form select { 
+        box-sizing: border-box; 
+        width: 60px; 
+        padding-left: 5px;
+    }
+    .sub_content .notice_area .minisrch_form input[type="text"] { 
+        width: 200px; 
+    }
+    .sub_content .notice_area .minisrch_form input[type="button"] {
+        width: 60px; 
+    }
+    .sub_content .notice_area .notice_list {
+        font-size: 14px;
+        letter-spacing: -1px;
+    }
+    .sub_content .notice_area .notice_list th {
+        font-size: 15px !important;
+    }
+    .sub_content .notice_area .notice_list tr th:first-child {
+        display: none;
+    }
+    .sub_content .notice_area .notice_list tr td:first-child {
+        display: none;
+    }
+    .sub_content .notice_area .notice_list tr td:nth-child(2) {
+        padding-left: 5px;
+    }
+  
+    /* notice in */
+        .notice_content img {
+            width: 100%;
+        }
+    /* notice in end */
+
+    /* review */
+        .review_area .btn_wrap {
+            width: 90vw;
+            margin: auto;
+            margin-top: 30px;
+        }
+        .review_area h3 {
+            display: none;
+        }
+        .review_area .review_list {
+            width: 90vw;
+            margin: 0 auto;
+            justify-content: center;
+        }
+        .review_area .review_list .review_content {
+            position: static;
+            width: 90vw;
+            margin-bottom: 0px;
+        }
+        .review_area .review_list .review_content .name {
+            position: static;
+            display: block;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            margin-left: 4%;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .review_area .review_list .review_content .root {
+            position: static;
+            display: inline-block;
+            margin-left: 4%;
+            margin-right: 20px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .review_area .review_list .review_content .use_date {
+            position: static;
+            top: 25px;
+            right: 30px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .review_area .review_list .review_content .star {
+            position: static;
+            width: 200px;
+            height: 40px;
+            margin-top: 20px;
+            margin-left: 4%;
+            background: url(../images/ico/star.png) repeat-x;
+            background-size: 40px;
+            text-indent: -9999px;
+        }
+        .review_area .review_list .review_content .title {
+            position: static;
+            width: unset;
+            margin-top: 20px;
+            margin-left: 4%;
+        }
+        .review_area .review_list .review_content .write_date {
+            position: static;
+            display: inline-block;
+            margin-top: 10px;
+            margin-left: 4%;
+            color: #999;
+            vertical-align: top;
+        }
+        .review_area .review_list .review_content .write_date::before {
+            content: '작성일 : ';
+            margin-right: 8px;
+            vertical-align: top;
+        }
+        .review_area .review_list .review_content .contents {
+            position: static;
+            margin-top: 20px;
+            margin-left: 4%;
+            width: 91%;
+            height: 100px;
+            overflow: auto;
+            line-height: 20px;
+            letter-spacing: -1px;
+        }
+        #book_check_area p {
+        	width: 90%;
+        }
+        #book_check_area input[type="text"] {
+        	width: 90%;
+        }
+        #book_check_area #book_check_btn {
+        	width: 90%;
+        }
+        .check_result {
+        	width: 100%;
+        }
+        .check_result h1 {
+        	font-size: 30px;
+        }
+        .check_result table th {
+        	font-size: 15px;
+        }
+        
+        #isData_yes table th:nth-child(1) {
+       	    width: 16%;
+        }
+        #isData_yes table th:nth-child(2) {
+        	width: 18%;
+        }
+        #isData_yes table th:nth-child(3) {
+        	width: 40%;
+        }
+        #write_btn {
+        	width: 70%;
+        	height: 35px;
+        	font-size: 12px;
+        }
+        #bEnd {
+        	display: block;
+        }
+        .review_area .write_wrap p.mid_text {
+        	position: static;
+        	display: block;
+        	text-align: left;
+        }
+        #reTitle {
+        	width: 100%;
+        }
+        .ck-editor__editable_inline {
+        	width: 100%;
+            min-height: 500px;
+        }
+        .review_area .write_wrap .star_list {
+        	display: block;
+       	}
+       	.review_area .write_wrap #reTitle {
+       		width: 100%;
+       	}
+       	/* ck-editor */
+       	.ck.ck-editor__main>.ck-editor__editable:not(.ck-focused) {
+		    box-sizing: border-box !important;
+		    width: 100% !important;
+		}
+		.ck.ck-toolbar.ck-toolbar_grouping>.ck-toolbar__items {
+		    overflow: none !important;
+		}
+		.ck-rounded-corners .ck.ck-editor__top .ck-sticky-panel .ck-toolbar, .ck.ck-editor__top .ck-sticky-panel .ck-toolbar.ck-rounded-corners {
+		    width: 99%;
+		}
+    /* review end */
+    /* review_write */
+        .review_area {
+            width: 90vw;
+        }
+        .review_area .write_wrap form fieldset > p {
+            display: block;
+            position: static;
+            margin-top: 20px;
+        }
+        .review_area .write_wrap form fieldset .star_list  {
+            margin: 20px 0;
+        }
+        .review_area .write_wrap form fieldset #review_title {
+            width: 100%;
+            margin: 0 0 20px 0;
+        }
+        .review_area .write_wrap form fieldset #ckditor_iframe {
+            width: 100%;
+            height: 300px;
+            margin: 0 0 20px 0;
+        }
+    /* review_write end */
+}

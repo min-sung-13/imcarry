@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+/* hotel */
+.hotel_content { margin-top: 70px; padding: 30px 15px; min-height: calc(100vh - 123px); }
+
+.hotel_content .hotel { width: 80%; min-height: 200px; margin: 0 auto 50px;	padding: 30px; border: 1px solid #cdcdcd; border-radius: 10px; background-color: #f6f6f6; box-shadow: 8px 8px 20px #ccc; }
+.hotel_content #findArea { position: relative; }
+.hotel_content #findArea input { width: 68%; height: 50px; padding: 10px; }
+.hotel_content #findArea button { width: 15%; height: 50px; position: absolute; }
+.hotel_content #findArea button#findBtn { right: 16%; background-color: #ffda00; }
+.hotel_content #findArea button#listBtn { right: 0; background-color: #fff; }
+
+.hotel_content .hotel_list table { width: 100%; text-align: center; }
+.hotel_content .hotel_list table th { height: 50px; background-color: #ecf0f1; border-bottom: 2px solid #34495e; }
+.hotel_content .hotel_list table td { height: 50px; border-bottom: 1px solid #bdc3c7; }
+.hotel_content .hotel_list table tr:first-child th:nth-child(1) { width: 15%; }
+.hotel_content .hotel_list table tr:first-child th:nth-child(2) { width: 45%; }
+.hotel_content .hotel_list table tr:first-child th:nth-child(3) { width: 20%; }
+.hotel_content .hotel_list table tr:first-child th:nth-child(4) { width: 20%; }
+.hotel_content .hotel_list #page { width: 100%; margin: 20px 20px 0 0; text-align: center; font-size: 20px; line-height: 40px; border-bottom: none; }
+.hotel_content .hotel_list #page a { margin: 0 5px; padding: 5px 10px; border-radius: 5px 5px; }
+.hotel_content .hotel_list #page a:hover { background-color: #BCC6E6; color: black; }
+.hotel_content .hotel_list #page a.on { background-color: #BCC6E6; color: black; }
+
+.hotel_content .hotel_view form p { position: relative; line-height: 40px; margin: 16px 0; height: 40px; }
+.hotel_content .hotel_view form input { width: 70%; height: 40px; position: absolute; right: 0; }
+.hotel_content .hotel_view form input[type="file"] { line-height: 35px; padding: 0; }
+.hotel_content .hotel_view form label { position: absolute; }
+.hotel_content .hotel_view form label#label1_1, .hotel_content .hotel_view form label#label2_1 { top: 10px; right: 68%; font-size: 20px; }
+.hotel_content .hotel_view form label#label1_2, .hotel_content .hotel_view form label#label2_2 { top: 10px; right: 58%; font-size: 20px; }
+.hotel_content .hotel_view form input#radio1_1, .hotel_content .hotel_view form input#radio2_1 { width: 30px; height: 30px; top: 10px; right: 63%; }
+.hotel_content .hotel_view form input#radio1_2, .hotel_content .hotel_view form input#radio2_2 { width: 30px; height: 30px; top: 10px; right: 53%; }
+.hotel_content .hotel_view form input[type="submit"] { width: 150px; position: relative; margin: 20px 0; font-size: 20px; line-height: 30px; }
+.hotel_content .hotel_view form input[type="button"] { width: 150px; position: relative; margin: 20px 0; font-size: 20px; line-height: 30px; }
+.hotel_content .hotel_view form p span { position: absolute; width: 70%; right: 0; }
