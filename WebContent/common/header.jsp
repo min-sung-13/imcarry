@@ -6,7 +6,7 @@
     
 <header id="header">
 <div class="header_area box_inner clear">
-    <h1><a href="../../mainpage/main/Main.jsp"></a></h1>
+    <h1><a href="../../mainpage/main/index.jsp"></a></h1>
     <!-- Mobile -->
     <div id="menu-container">
         <div id="menu-wrapper">
