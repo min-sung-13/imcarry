@@ -39,7 +39,7 @@
 						<tr>
 							<td>${book.bIdx}</td>
 							<td>${book.bName}</td>
-							<td>${book.bHp.substring(0, 3)} - ${book.bHp.substring(2, 6)} - ${book.bHp.substring(7)}</td>
+							<td>${book.bHp.substring(0, 3)} - ${book.bHp.substring(3, 7)} - ${book.bHp.substring(7)}</td>
 							<td>${book.bStart} → ${book.bEnd}</td>
 							<td>${book.bStartdate}</td>
 							<td>${book.bEnddate}</td>

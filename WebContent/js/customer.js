@@ -82,7 +82,7 @@ $(function() {
     				let bEnddate = bookJSON.bStartdate;
     				let bIsreview = bookJSON.bIsreview;
     				
-    				if (isData == 'yes' && bIsreview == 'X') {
+    				if (isData == "yes" && bIsreview == "x") {
     					$('#isData_yes').removeClass('hidden');
     					$('#isData_no').addClass('hidden');
     					$('#bName').html(bName);
