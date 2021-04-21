@@ -1,0 +1,155 @@
+@import url(common.css);
+
+/* 보관서비스 */
+.reservation {
+	background: url(../images/img/sub02_visual_img.jpg) no-repeat 9% 0;
+}
+
+.sub_content_wrap {
+	width: 100%;
+	height: fit-content;
+	background-attachment: fixed;
+	letter-spacing: -2px;
+	position: relative;
+}
+
+.sub_content_wrap .sub_content .sub_navi ul li {
+	width: 50%;
+}
+
+.sub_content .sub_navi ul li:last-child a {
+	font-weight: bold;
+	background: #ffda00;
+}
+
+#reFind {
+	margin-top: 70px;
+	background: #F7F7F7;
+}
+
+#reFind #reFind_img {
+	margin: 0 auto 40px;
+	padding-top: 115px;
+	width: 150px;
+}
+
+#reFind h3 {
+	font-size: 28px;
+	font-weight: normal;
+	line-height: 35px;
+	text-align: center;
+}
+
+/* 조회 입력 폼 */
+#reFind form {
+	text-align: center;
+	margin: 0 auto;
+	max-width: 50%;
+	padding-top: 20px;
+	padding-bottom: 100px;
+}
+
+#reFind form #name1 {
+	background: #fff;
+	border: 1px solid #ddd;
+}
+
+#reFind form #phone2 {
+	background: #fff;
+	border: 1px solid #ddd;
+}
+
+#reFind form #btninput {
+	background: #FFD100;
+	border: none;
+	color: #000;
+}
+
+#btninput {
+	height: 65px;
+	width: 84%;
+	font-size: 1.4em;
+	margin-top: 30px;
+}
+
+input {
+	background: #f8f8f8;
+	border: RGB(86, 103, 105) 2px solid;
+	margin: 1rem;
+	width: 80%;
+	min-height: 2rem;
+	padding: 10px;
+	color: RGB(86, 103, 105);
+	font-size: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+	.sub_content_wrap .sub_title {
+		height: 70px;
+		margin: 0;
+		padding: 150px 0 50px 4%;
+		font-size: 26px;
+	}
+	.white {
+		width: 100%;
+	}
+	.white .sub_content {
+		width: 100%;
+	}
+	.white .sub_content .sub_navi {
+		width: 100%;
+		left: 0;
+		top: 0;
+	}
+	.white .sub_content .sub_navi ul {
+		width: 100%;
+		height: 100%;
+	}
+	.white .sub_content .sub_navi ul li {
+		width: 50%;
+	}
+	.white .sub_content .sub_navi ul li a {
+		height: 100%;
+	}
+	.white .sub_content .sub_navi ul li:first-child a {
+		border-radius: 0;
+	}
+	.white .sub_content .sub_navi ul li:last-child a {
+		border-radius: 0;
+	}
+	.white .sub_content .sub_indicator {
+		width: 90%;
+		padding-bottom: 1.5%;
+		padding-top: 130px;
+		margin: 0 auto;
+	}
+	.white .sub_content .sub_indicator>ul {
+		display: none;
+	}
+	.white .sub_content .sub_indicator>h2 {
+		font-size: 30px;
+		color: black;
+		font-weight: 600;
+	}
+	#reFind {
+		width: 90%;
+		margin: 25px auto 0;
+	}
+	#reFind #reFind_img {
+		padding-top: 40px;
+	}
+	#reFind h3 {
+		font-size: 1.3em;
+	}
+	#reFind form {
+		padding-bottom: 30px;
+	}
+	#reFind form input {
+		width: 150%;
+		margin: 10px -58px;
+	}
+	#reFind form #btninput {
+		width: 150%;
+		margin: 20px -45px;
+	}
+}

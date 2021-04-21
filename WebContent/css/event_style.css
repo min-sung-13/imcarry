@@ -1,0 +1,18 @@
+ @import url("common.css");
+
+ /* event */
+ .event_basic_list { width: 1200px; box-sizing: border-box; border-top: 2px solid #000; margin-top: 60px; text-align: center; border: 1px solid #ccc; border-left:none; border-right:none; border-bottom: 1px solid #dddddd; }
+ .event_basic_list thead { width: 192px; background-color: #f5f5f5; border-bottom: 1px solid #dddddd; }
+ .event_basic_list thead tr th { padding: 10px 0; }
+ .event_basic_list tbody td, .event_basic_list tbody th { padding: 2%; }
+ .event_basic_picture { margin-top: 50px; text-align: center; border-bottom: 1px solid #dddddd; text-align: center }
+ /* event end */
+
+ /* 모바일 */
+ @media screen and (max-width: 800px) {
+ .sub_content_wrap .sub_title { width: fit-content; height: 70px; margin: 0; padding: 150px 0 50px 4%; font-size: 26px }
+ .sub_content_wrap .sub_content .sub_indicator { height: 60px; padding-top: 50px;border-bottom: 1px solid #ddd; }
+ .sub_content_wrap .sub_content .sub_indicator h2 { float: left; padding-left: 4%; font-size: 34px; }
+ .event_basic_list { width: 100%; }
+ .event_basic_picture img { width: 100%; }
+ }
